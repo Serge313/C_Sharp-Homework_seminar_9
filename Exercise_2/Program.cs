@@ -1,7 +1,7 @@
 ﻿uint m;
 try
 {
-    m = GetNumber("Enter your number \"M\": ");
+    m = GetNumber("Enter your number \"m\": ");
 }
 catch (FormatException ex)
 {
@@ -12,7 +12,7 @@ catch (FormatException ex)
 uint n;
 try
 {
-    n = GetNumber("Enter your number \"N\": ");
+    n = GetNumber("Enter your number \"n\": ");
 }
 catch (FormatException ex)
 {
@@ -21,7 +21,7 @@ catch (FormatException ex)
 }
 
 uint sum = Recursion(m, n);
-Console.Write(sum);
+Console.Write($"m = {m}, n = {n} -> {sum}");
 
 
 
