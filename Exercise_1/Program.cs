@@ -15,15 +15,14 @@ Recursion(n);
 
 void Recursion(uint n)
 {
-    if (n > 1)
+    if (n == 1)
     {
-        Console.Write($"{n}, ");
-        n = n - 1;
-        Recursion(n);
+        Console.Write(n);
     }
     else
     {
-        Console.Write(n);
+        Console.Write($"{n}, ");
+        Recursion(n - 1);
     }
 }
 
